@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KINEMOTIC - Cinematic Motorcycle</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#0a0a0a;color:#fff;font-family:'Inter',sans-serif;}
+  h1,h2{font-family:'Anton',sans-serif;letter-spacing:1px;text-transform:uppercase}
+  a{text-decoration:none;color:inherit}
+  /* HERO */
+  .hero{
+    height:100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), #0a0a0a), url('https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=1920') center/cover;
+    display:flex;flex-direction:column;justify-content:space-between;padding:30px;
+  }
+  .nav{display:flex;justify-content:space-between;align-items:center;font-size:14px;letter-spacing:2px;opacity:0.8}
+  .hero-center{text-align:center}
+  .hero-center h1{font-size:12vw;line-height:0.9;}
+  .hero-center p{margin-top:15px;letter-spacing:5px;font-weight:300;opacity:0.7}
+  .hero-bottom{display:flex;justify-content:space-between;align-items:end;font-size:12px;letter-spacing:1px}
+  .btn-ig{
+    background:#fff;color:#000;padding:14px 28px;font-weight:600;letter-spacing:1px;
+    display:inline-flex;gap:10px;align-items:center;transition:0.3s
+  }
+  .btn-ig:hover{background:#ff2a2a;color:#fff}
+  /* GALLERY */
+  .gallery{padding:80px 20px;max-width:1200px;margin:auto}
+  .gallery h2{font-size:48px;margin-bottom:10px}
+  .sub{opacity:0.5;margin-bottom:40px;font-weight:300}
+  .grid{
+    display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:15px
+  }
+  .grid img{
+    width:100%;height:450px;object-fit:cover;filter:grayscale(20%) contrast(1.1);
+    transition:0.5s;cursor:pointer
+  }
+  .grid img:hover{filter:grayscale(0%);transform:scale(1.02)}
+  /* ABOUT */
+  .about{
+    padding:80px 20px;border-top:1px solid #222;
+    max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px
+  }
+  .about p{line-height:1.8;opacity:0.7;font-weight:300}
+  /* FOOTER */
+  footer{padding:60px 20px;text-align:center;border-top:1px solid #222;opacity:0.6}
+  footer a{color:#fff;text-decoration:underline}
+  @media(max-width:768px){
+    .hero-center h1{font-size:18vw}
+    .about{grid-template-columns:1fr}
+    .hero-bottom{flex-direction:column;gap:20px;align-items:center}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="nav">
+    <span>BUKITTINGGI / 2026</span>
+    <span>MOTOR - SENJA - DEBU</span>
+  </div>
+  <div class="hero-center">
+    <h1>KINEMOTIC</h1>
+    <p>CINEMATIC MOTORCYCLE PHOTOGRAPHER</p>
+  </div>
+  <div class="hero-bottom">
+    <div>SCROLL UNTUK LIHAT KARYA ↓</div>
+    <a class="btn-ig" href="https://instagram.com/USERNAME_LU" target="_blank">
+      IG: @USERNAME_LU →
+    </a>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Selected Works</h2>
+  <p class="sub">Foto motor jam 6 sore - langit oranye - bintik debu itu cerita</p>
+  <div class="grid">
+    <!-- GANTI LINK FOTO LU DISINI -->
+    <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?q=80&w=800" alt="motor 1">
+    <img src="https://images.unsplash.com/photo-1558981852-426c6c22a060?q=80&w=800" alt="motor 2">
+    <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?q=80&w=800" alt="motor 3">
+    <img src="https://images.unsplash.com/photo-1527903789995-dc8ad2ad6de0?q=80&w=800" alt="motor 4">
+    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800" alt="motor 5">
+    <img src="https://images.unsplash.com/photo-1511910849309-0dffb8785146?q=80&w=800" alt="motor 6">
+  </div>
+</section>
+
+<section class="about">
+  <div>
+    <h2>About</h2>
+  </div>
+  <div>
+    <p>
+      Gue motret motor bukan cuma motornya. Tapi angin, senja, lampu jalan, dan debu di sensor yang kadang bikin foto makin real.
+      Base di Bukittinggi, hunting jam 5-7 sore. Cinematic, grainy, apa adanya.
+      <br><br>
+      Available for photoshoot motor, komunitas, dan brand.
+      <br><br>
+      <a class="btn-ig" href="https://instagram.com/USERNAME_LU" target="_blank">CHAT DI INSTAGRAM</a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 KINEMOTIC — Shot on dusty sensor, edited with heart.<br>
+  IG: <a href="https://instagram.com/USERNAME_LU">@USERNAME_LU</a> • WA: 08xx-xxxx-xxxx</p>
+</footer>
+
+</body>
+</html>
